@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fighting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MAIN MENU -->
+<div id="menu">
+    <h1>FIGHTING GAME</h1>
+    <button id="startBtn">Start Game</button>
+</div>
+
+<!-- CHARACTER SELECT -->
+<div id="characterSelect" class="hidden">
+    <h2>Select Character</h2>
+    <button class="charBtn" data-char="ninja">Ninja</button>
+    <button class="charBtn" data-char="brute">Brute</button>
+</div>
+
+<!-- HUD -->
+<div id="hud" class="hidden">
+    <div class="topBar">
+        <div class="healthContainer">
+            <div class="healthBar">
+                <div id="playerHealth"></div>
+                <div id="playerDamage"></div>
+            </div>
+        </div>
+
+        <div id="roundText">ROUND 1</div>
+
+        <div class="healthContainer">
+            <div class="healthBar">
+                <div id="enemyHealth"></div>
+                <div id="enemyDamage"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="comboCounter"></div>
+</div>
+
+
+<canvas id="gameCanvas" width="900" height="500"></canvas>
+
+<script src="game.js"></script>
+</body>
+</html>
