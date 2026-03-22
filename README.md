@@ -1,0 +1,2 @@
+# teyn
+conding,modeling,gaming
